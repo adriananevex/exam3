@@ -1,8 +1,8 @@
 def echo_validator(text: str) -> bool:
-    cleaned = ''.join(clower() for c in text if c.isalpha())
+    cleaned = ''.join(c.lower() for c in text if c.isalpha())
 
     if not cleaned:
-        return false
+        return False
 
     return cleaned == cleaned[::-1]
 
